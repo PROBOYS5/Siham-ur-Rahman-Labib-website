@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>The History of Minecraft</title>
+	<style>
+		.tab {
+			background-color: #0000ff;
+			color: rgba(63, 246, 1, 1);
+			border: 1px solid #ccc;
+			padding: 10px;
+			margin-bottom: 10px;
+			cursor: pointer;
+		}
+		
+		.tab:hover {
+			background-color: #E0E0E0;
+		}
+		
+		.tab.active {
+			background-color: #CCCCCC;
+			color: #333;
+		}
+		
+		.tabcontent {
+			display: none;
+			padding: 20px;
+			border: 1px solid #CCCCCC;
+			border-top: none;
+		}
+		
+		body {
+			background-color: rgba(175, 15, 15, 1);
+		}
+	</style>
+</head>
+<body>
+
+<h1>The History of Minecraft</h1>
+
+<div class="tabs">
+	<button class="tab" onclick="openTab(event, 'Minecraft-Birthday')">Minecraft Birthday</button>
+	<button class="tab" onclick="openTab(event, 'Minecraft-Owner')">Minecraft Owner</button>
+	<button class="tab" onclick="openTab(event, 'Minecraft-Owner-Now')">Minecraft Owner Now</button>
+</div>
+
+<div id="Minecraft-Birthday" class="tabcontent">
+	<h2>Minecraft Birthday</h2>
+	<h4>Minecraft is a 2010 sandbox game developed and published by Mojang Studios. Originally created by Markus "Notch" Persson using the Java programming language, it was developed over the span of two years, with many public test builds being released from May 2009 until its full release on 18 November 2010. After the game's full release, Persson gave Jens "Jeb" Bergensten control over the game's development. In the years since its release, it has been ported to several platforms, including smartphones and various video game consoles, primarily by 4J Studios.</h4>
+</div>
+
+<div id="Minecraft-Owner" class="tabcontent">
+	<h2>Minecraft Owner</h2>
+	<h4>The owner of Minecraft was Notch but credit is given to Mojang. Jeb is also known as the Developer of minecraft.</h4>
+</div>
+
+<div id="Minecraft-Owner-Now" class="tabcontent">
+	<h2>Minecraft Owner Now</h2>
+	<h4>The Current mincraft owner is Microsoft. It was purchased by 2.6 billion $ from Notch,Mojang,Jeb. . They currently owns minecraft</h4>
+</div>
+
+<script>
+	function openTab(evt, tabName) {
+		var i, tabcontent, tablinks;
+		tabcontent = document.getElementsByClassName("tabcontent");
+		for (i = 0; i < tabcontent.length; i++) {
+			tabcontent[i].style.display = "none";
+		}
+		tablinks = document.getElementsByClassName("tab");
+		for (i = 0; i < tablinks.length; i++) {
+			tablinks[i].className = tablinks[i].className.replace(" active", "");
+		}
+		document.getElementById(tabName).style.display = "block";
+		evt.currentTarget.className += " active";
+	}
+</script>
+
+<button onclick="location.href='index.html'">Previous page</button>
+<button onclick="location.href='next_page2.html'">Next Page</button>
+
+</body>
+</html>
